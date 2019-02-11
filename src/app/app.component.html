@@ -1,0 +1,8 @@
+
+<div class="image-selection">
+  <div *ngFor="let image of images"><img width="128" [src]="image"></div>
+</div>
+
+<div class="actions">
+  <button type="button" (click)="openImageOverlay()">Open images</button>
+</div>
