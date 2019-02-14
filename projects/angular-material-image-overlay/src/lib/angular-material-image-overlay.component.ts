@@ -10,16 +10,16 @@ export const IMAGE_URLS = new InjectionToken<string>('IMAGE_URLS');
 export class AngularMaterialImageOverlayComponent {
   private currentImageIndex = 0;
   currentImage: string;
-  onKeydown = new Subject<number>();
+  onKeydown = new Subject<string>();
   onClose = new Subject<void>();
-  
+
   constructor(@Inject(IMAGE_URLS) public images: string[]) {
     this.currentImage = this.images[this.currentImageIndex];
   }
 
   // TODO: Can we make this private?
   @HostListener('document:keydown', ['$event']) handleKeydown(event: KeyboardEvent) {
-    this.onKeydown.next(event.keyCode);
+    this.onKeydown.next(event.key);
   }
 
   close(): void {

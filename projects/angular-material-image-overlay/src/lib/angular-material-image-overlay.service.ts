@@ -5,8 +5,6 @@ import { ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 import { AngularMaterialImageOverlayComponent } from './angular-material-image-overlay.component';
 import { IMAGE_URLS } from './angular-material-image-overlay.component';
 
-export enum Keydown {ESCAPE = 27, SPACE = 32, LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40}
-
 @Injectable({
   providedIn: 'root'
 })
@@ -37,9 +35,6 @@ export class AngularMaterialImageOverlayService {
 
     this.overlayRef = this.overlay.create(this.buildOverlayConfig());
 
-    
-
-
     this.overlayRef.backdropClick().subscribe(() => this.overlayRef.dispose());
 
     this.imageOverlayComponentRef = this.overlayRef.attach(imagePortal);
@@ -47,17 +42,17 @@ export class AngularMaterialImageOverlayService {
     this.imageOverlayComponentRef.instance.onClose.subscribe(() => this.overlayRef.dispose());
   }
 
-  private onKeydown(keycode: number): void {
-    switch(keycode) {
-      case(Keydown.RIGHT):
-      case(Keydown.DOWN):
+  private onKeydown(keycode: string): void {
+    switch (keycode) {
+      case('ArrowRight'):
+      case('ArrowDown'):
         this.imageOverlayComponentRef.instance.nextImage();
         break;
-      case(Keydown.LEFT):
-      case(Keydown.UP):
+      case('ArrowLeft'):
+      case('ArrowUp'):
         this.imageOverlayComponentRef.instance.previousImage();
         break;
-      case(Keydown.ESCAPE):
+      case('Escape'):
         this.overlayRef.dispose();
     }
   }
