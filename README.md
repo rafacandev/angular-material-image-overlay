@@ -81,3 +81,7 @@ When publishing, first update the versions on `package.json` and `projects/angul
 cd ${APP_ROOT_FOLDER}/dist/angular-material-image-overlay
 npm publish
 ```
+
+License
+=======
+Code released under the (MIT license)[LICENSE]
