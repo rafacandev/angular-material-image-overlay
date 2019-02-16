@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build-dev": "rm -rf dist && ng build angular-material-image-overlay && rm -rf node_modules/angular-material-image-overlay",
+    "demo": "ng build --prod --delete-output-path --output-path docs --base-href /angular-material-image-overlay/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
