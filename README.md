@@ -2,7 +2,7 @@ angular-material-image-overlay
 ==============================
 An image overlay based on [Angular Material](https://material.angular.io/). Try out the [demo page](https://rafasantos.github.io/angular-material-image-overlay/)
 
-![Screenshot](src/assets/screenshot.jpg "Screenshot from demo page")
+![Screenshot](https://raw.githubusercontent.com/rafasantos/angular-material-image-overlay/master/src/assets/screenshot.jpg "Screenshot from demo page")
 
 Quick Start
 -----------
@@ -80,7 +80,11 @@ cp -r dist/angular-material-image-overlay/ ${YOUR_APP}/node_modules/
 
 When publishing, first update the versions on `package.json` and `projects/angular-material-image-overlay/package.json`; then test, build and publish it to `npm`.
 ```
-cd ${APP_ROOT_FOLDER}/dist/angular-material-image-overlay
+cd ${APP_ROOT_FOLDER}
+npm version patch
+cd projects/angular-material-image-overlay/
+npm version patch
+cd ../../dist/angular-material-image-overlay
 npm publish
 ```
 
