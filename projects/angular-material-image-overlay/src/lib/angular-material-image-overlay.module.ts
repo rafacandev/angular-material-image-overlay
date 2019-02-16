@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     OverlayModule
   ],
-  entryComponents: [AngularMaterialImageOverlayComponent],
-  exports: [AngularMaterialImageOverlayComponent]
+  entryComponents: [AngularMaterialImageOverlayComponent]
 })
 export class AngularMaterialImageOverlayModule { }
