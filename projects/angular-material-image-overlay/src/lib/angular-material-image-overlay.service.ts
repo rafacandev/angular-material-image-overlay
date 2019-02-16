@@ -3,10 +3,11 @@ import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
 import { ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 
 import { AngularMaterialImageOverlayComponent } from './angular-material-image-overlay.component';
+import { AngularMaterialImageOverlayModule } from './angular-material-image-overlay.module';
 import { IMAGE_URLS } from './angular-material-image-overlay.component';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: AngularMaterialImageOverlayModule
 })
 export class AngularMaterialImageOverlayService {
   imageOverlayComponentRef: ComponentRef<AngularMaterialImageOverlayComponent>;
