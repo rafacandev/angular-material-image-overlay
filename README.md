@@ -1,6 +1,8 @@
 angular-material-image-overlay
 ==============================
-An image overlay based on [Angular Material](https://material.angular.io/).
+An image overlay based on [Angular Material](https://material.angular.io/). Try out the [demo page](https://rafasantos.github.io/angular-material-image-overlay/)
+
+![Screenshot](src/assets/screenshot.jpg "Screenshot from demo page")
 
 Quick Start
 -----------
