@@ -1,6 +1,6 @@
 angular-material-image-overlay
 ==============================
-An image overlay based on (Angular Material)[https://material.angular.io/].
+An image overlay based on [Angular Material](https://material.angular.io/).
 
 Quick Start
 -----------
@@ -52,7 +52,7 @@ cd angular-material-image-overlay
 npm start
 ```
 
-Navigate to http://localhost:4200/)
+Navigate to http://localhost:4200
 
 Development
 -----------
