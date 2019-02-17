@@ -1,7 +1,12 @@
 import { Component, Inject, InjectionToken, HostListener } from '@angular/core';
 import { Subject } from 'rxjs';
 
-export const IMAGE_URLS = new InjectionToken<string>('IMAGE_URLS');
+export interface ImageOverlayData {
+  images: string[];
+  currentImage?: string;
+}
+
+export const IMAGE_OVERLAY_DATA_TOKEN = new InjectionToken<ImageOverlayData>('IMAGE_OVERLAY_DATA');
 
 @Component({
   templateUrl: './angular-material-image-overlay.component.html',
@@ -9,12 +14,22 @@ export const IMAGE_URLS = new InjectionToken<string>('IMAGE_URLS');
 })
 export class AngularMaterialImageOverlayComponent {
   private currentImageIndex = 0;
+  private images: string[];
   currentImage: string;
   onKeydown = new Subject<string>();
   onClose = new Subject<void>();
 
-  constructor(@Inject(IMAGE_URLS) public images: string[]) {
-    this.currentImage = this.images[this.currentImageIndex];
+  constructor(@Inject(IMAGE_OVERLAY_DATA_TOKEN) public imageOverlayData: ImageOverlayData) {
+    this.images = imageOverlayData.images;
+    this.currentImageIndex = this.obtainCurrentImageIndex(imageOverlayData.currentImage);
+    this.currentImage = this.images[this.currentImageIndex]
+  }
+
+  private obtainCurrentImageIndex(dataCurrentImage: string): number {
+    if (dataCurrentImage) {
+      return this.images.indexOf(dataCurrentImage);
+    }
+    return 0;
   }
 
   // TODO: Can we make this private?

@@ -17,7 +17,7 @@ export class AppComponent {
   constructor(private imageOverlayService: AngularMaterialImageOverlayService) {
   }
 
-  openImageOverlay(): void {
-    this.imageOverlayService.open(this.imageUrls);
+  openImageOverlay(image: string): void {
+    this.imageOverlayService.open(this.imageUrls, image);
   }
 }

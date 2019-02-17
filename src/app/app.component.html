@@ -1,8 +1,9 @@
-
 <div class="image-selection">
-  <div *ngFor="let image of imageUrls"><img width="128" [src]="image"></div>
+  <div *ngFor="let image of imageUrls">
+    <img width="128" [src]="image" (click)="openImageOverlay(image)">
+  </div>
 </div>
 
-<div class="actions">
-  <button type="button" (click)="openImageOverlay()">Open images</button>
-</div>
+<p class="actions">
+  Click on one of the images above or <a href='#' (click)="openImageOverlay()">open the overlay here</a>
+</p>
