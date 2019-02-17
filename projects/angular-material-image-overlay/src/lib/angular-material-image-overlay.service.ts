@@ -30,7 +30,7 @@ export class AngularMaterialImageOverlayService {
     return result;
   }
 
-  open(images: string[], currentImage: string) {
+  open(images: string[], currentImage?: string) {
     const imagesInjector = this.buildInjector(images, currentImage);
     const imagePortal = new ComponentPortal(AngularMaterialImageOverlayComponent, null, imagesInjector);
 
