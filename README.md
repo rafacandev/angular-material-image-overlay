@@ -60,25 +60,19 @@ Development
 -----------
 `${APP_ROOT_FOLDER}` references the root folder of the application typically the git repository root folder.
 
-Build the project and override the local `angular-material-image-overlay` installation. Userfull when you want to make changes to the project and test it locally.
+This command builds the project and override the local `angular-material-image-overlay` installation.
+The built package is located at `${APP_ROOT_FOLDER} dist/angular-material-image-overlay`
 ```
 npm run build-dev
 ```
 
-Build the project to the distribution folder: `${APP_ROOT_FOLDER}/dist/angular-material-image-overlay`
-```
-cd ${APP_ROOT_FOLDER}
-ng build angular-material-image-overlay
-ls dist/angular-material-image-overlay
-```
-
-Installing the package manually into a different project without `npm install`. This is only recommended for prototyping.
+Use this command if you wish to install a development version manually into a different project without `npm install`. This is only recommended for prototyping.
 ```
 cd ${APP_ROOT_FOLDER}
 cp -r dist/angular-material-image-overlay/ ${YOUR_APP}/node_modules/
 ```
 
-When publishing, first update the versions on `package.json` and `projects/angular-material-image-overlay/package.json`; then test, build and publish it to `npm`.
+Follow this steps when publishing:
 ```
 cd ${APP_ROOT_FOLDER}
 cd projects/angular-material-image-overlay/
