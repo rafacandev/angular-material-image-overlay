@@ -7,7 +7,7 @@ import { AngularMaterialImageOverlayService } from 'angular-material-image-overl
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  imageUrls = [
+  images = [
     'https://cdn.plixs.com/uploads/preview/plixs-photo-31231544218415smhm2g5a1u.jpg',
     'https://cdn.plixs.com/uploads/preview/tulips-red-macro-vivid-color-8901524736141v6mymapfyk.jpg',
     'https://cdn.plixs.com/uploads/preview/plixs-photo-30291543860948l4z7bnhn7f.jpg',
@@ -18,6 +18,6 @@ export class AppComponent {
   }
 
   openImageOverlay(image: string): void {
-    this.imageOverlayService.open(this.imageUrls, image);
+    this.imageOverlayService.open(this.images, image);
   }
 }
