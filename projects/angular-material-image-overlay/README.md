@@ -30,10 +30,10 @@ export class AppModule { }
 Open the images via `AngularMaterialImageOverlayService.open(imageUrls: string[])`
 ```
 imageUrls = [
-  'https://plixs.com/public/uploads/preview/plixs-photo-31231544218415smhm2g5a1u.jpg',
-  'https://plixs.com/public/uploads/preview/rope-node-solid-maritime-4361524216895fj1pvztgd1.jpg',
-  'https://plixs.com/public/uploads/preview/plixs-photo-31231544218168fgcal7xkxe.jpg',
-  'https://plixs.com/public/uploads/preview/plixs-photo-31231544217590vwh6204yse.jpg'
+  'https://cdn.plixs.com/uploads/preview/plixs-photo-31231544218415smhm2g5a1u.jpg',
+  'https://cdn.plixs.com/uploads/preview/tulips-red-macro-vivid-color-8901524736141v6mymapfyk.jpg',
+  'https://cdn.plixs.com/uploads/preview/plixs-photo-30291543860948l4z7bnhn7f.jpg',
+  'https://cdn.plixs.com/uploads/preview/orange-3267758-10361526730776r0r36bdbrt.jpg'
 ];
 
 constructor(private imageOverlayService: AngularMaterialImageOverlayService) {
