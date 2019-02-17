@@ -66,15 +66,16 @@ The built package is located at `${APP_ROOT_FOLDER} dist/angular-material-image-
 npm run build-dev
 ```
 
-Use this command if you wish to install a development version manually into a different project without `npm install`. This is only recommended for prototyping.
+Use these commands if you wish to install a development version manually into a different project without `npm install`. This is only recommended for prototyping.
 ```
 cd ${APP_ROOT_FOLDER}
 cp -r dist/angular-material-image-overlay/ ${YOUR_APP}/node_modules/
 ```
 
-Use this command if you wish to deploy the demo application to git hub pages:
+Use these commands if you wish to deploy the demo application to git hub pages:
 ```
 npm run demo
+git commit -a -m "Deploying to github pages"
 ```
 
 Follow this steps when publishing:
