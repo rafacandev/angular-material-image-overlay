@@ -72,6 +72,11 @@ cd ${APP_ROOT_FOLDER}
 cp -r dist/angular-material-image-overlay/ ${YOUR_APP}/node_modules/
 ```
 
+Use this command if you wish to deploy the demo application to git hub pages:
+```
+npm run demo
+```
+
 Follow this steps when publishing:
 ```
 cd ${APP_ROOT_FOLDER}
