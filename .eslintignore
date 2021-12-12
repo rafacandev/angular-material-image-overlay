@@ -1,0 +1,9 @@
+**/*.txt
+coverage/*
+dist/*
+node_modules/*
+src/types/*
+src/polyfills.ts
+karma.conf.js
+karma.*.conf.js
+**/cypress/plugins/index.ts
