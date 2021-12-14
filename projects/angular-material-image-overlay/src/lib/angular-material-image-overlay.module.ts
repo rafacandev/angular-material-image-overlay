@@ -1,15 +1,19 @@
-import { NgModule } from '@angular/core';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { AngularMaterialImageOverlayComponent } from './angular-material-image-overlay.component';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [AngularMaterialImageOverlayComponent],
+  declarations: [
+    AngularMaterialImageOverlayComponent
+  ],
   imports: [
     CommonModule,
     OverlayModule
   ],
-  entryComponents: [AngularMaterialImageOverlayComponent]
+  exports: [
+    AngularMaterialImageOverlayComponent
+  ]
 })
 export class AngularMaterialImageOverlayModule { }

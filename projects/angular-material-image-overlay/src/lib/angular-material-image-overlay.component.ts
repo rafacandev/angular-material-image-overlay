@@ -21,7 +21,7 @@ export class AngularMaterialImageOverlayComponent {
 
   constructor(@Inject(IMAGE_OVERLAY_DATA_TOKEN) public imageOverlayData: ImageOverlayData) {
     this.images = imageOverlayData.images;
-    this.currentImageIndex = this.obtainCurrentImageIndex(imageOverlayData.currentImage);
+    this.currentImageIndex = this.obtainCurrentImageIndex(imageOverlayData.currentImage as string);
     this.currentImage = this.images[this.currentImageIndex]
   }
 
@@ -32,8 +32,8 @@ export class AngularMaterialImageOverlayComponent {
     return 0;
   }
 
-  // TODO: Can we make this private?
-  @HostListener('document:keydown', ['$event']) handleKeydown(event: KeyboardEvent) {
+  @HostListener('document:keydown', ['$event'])
+  private handleKeydown(event: KeyboardEvent) {
     this.onKeydown.next(event.key);
   }
 
