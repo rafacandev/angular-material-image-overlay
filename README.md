@@ -63,7 +63,7 @@ Development
 This command builds the project and override the local `angular-material-image-overlay` installation.
 The built package is located at `${APP_ROOT_FOLDER} dist/angular-material-image-overlay`
 ```
-npm run build-dev
+npm run build:lib
 ```
 
 Use these commands if you wish to install a development version manually into a different project without `npm install`. This is only recommended for prototyping.
