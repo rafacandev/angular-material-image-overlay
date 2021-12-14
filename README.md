@@ -84,9 +84,9 @@ cd ${APP_ROOT_FOLDER}
 cd projects/angular-material-image-overlay/
 npm version patch
 cd ../../
-npm run build-dev
+npm run build:lib
 npm version patch --no-git-tag-version
-git commit -a -m "Version up to xxxx
+git commit -a -m "Version up to vxxx"
 cd dist/angular-material-image-overlay
 npm publish
 ```
