@@ -1,3 +1,11 @@
+Deprecation Notice
+==================
+In all transparency, I receive many dependabot alerts advising to update versions of the dependencies in this project. This project was created a long time ago with the nimial dependency set required by Angular and I am very surprised by the number of security alerts.
+
+I am not developing in Angular in my day to day and I am getting rusty. Moreover, I am confident  that nowadays there are better options out there for a simple image overlay.
+
+In conclusion, I am deprecating this project and I won't be maintaining it anymore (except for merging dependabot PRs). I am keeping this project up though as it might serve as reference if you ever want to create a project like this from scratch.
+
 angular-material-image-overlay
 ==============================
 An image overlay based on [Angular Material](https://material.angular.io/). Try out the [demo page](https://rafasantos.github.io/angular-material-image-overlay/)
