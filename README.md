@@ -8,7 +8,7 @@ In conclusion, I am deprecating this project and I won't be maintaining it anymo
 
 angular-material-image-overlay
 ==============================
-An image overlay based on [Angular Material](https://material.angular.io/). Try out the [demo page](https://rafasantos.github.io/angular-material-image-overlay/)
+An image overlay based on [Angular Material](https://material.angular.io/). Try out the [demo page](https://rafacandev.github.io/angular-material-image-overlay/)
 
 ![Screenshot](https://raw.githubusercontent.com/rafasantos/angular-material-image-overlay/master/src/assets/screenshot.jpg "Screenshot from demo page")
 
